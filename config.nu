@@ -158,3 +158,17 @@ $env.PROMPT_INDICATOR_VI_INSERT = " "
 # When a commandline extends across multiple lines:
 $env.PROMPT_MULTILINE_INDICATOR = "::: "
 
+# --- Third Party Custom ---
+
+# [[Yazi]]
+# Use `yaya` instead of yazi to start, and press q to quit, you'll see the CWD changed.  
+# Sometimes, you don't want to change, press Q to quit.
+def --env yaya [...args] {
+    let tmp = (mktemp -t "yazi-cwd.XXXXXX")
+    yazi ...$args --cwd-file $tmp
+    let cwd = (open $tmp)
+    if $cwd != "" and $cwd != $env.PWD {
+        cd $cwd
+    }
+    rm -fp $tmp
+}

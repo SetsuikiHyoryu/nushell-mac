@@ -2,9 +2,13 @@
 
 ## [Unreleased]
 
+### Added
+
+- Add Yazi `yaya` function config.
+
 ## [0.1.0] - 2025-06-05
 
-## Added (0.1.0)
+### Added (0.1.0)
 
 - Create `CHANGELOG.md`.
 - Create configs.
