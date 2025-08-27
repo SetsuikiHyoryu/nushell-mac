@@ -130,17 +130,6 @@ $env.config.buffer_editor = "nvim"
 $env.config.edit_mode = "vi"
 $env.config.table.mode = "light"
 
-let posh_theme = "~/.poshthemes/"
-# Change the theme names to: zash/space/robbyrussel/powerline/powerlevel10k_lean/
-# material/half-life/lambda Or double lines theme: amro/pure/spaceship, etc.
-# For more [Themes demo](https://ohmyposh.dev/docs/themes)
-$env.PROMPT_COMMAND = { || oh-my-posh prompt print primary --config $'($posh_theme)/tokyo_mine.omp.json' }
-# Optional
-$env.PROMPT_INDICATOR = $"(ansi y) (ansi reset)"
-
-$env.PROMPT_COMMAND_RIGHT = {||}
-
-
 # PROMPT_INDICATOR*
 # -----------------
 # The prompt indicators are environmental variables that represent
@@ -159,6 +148,17 @@ $env.PROMPT_INDICATOR_VI_INSERT = " "
 $env.PROMPT_MULTILINE_INDICATOR = "::: "
 
 # --- Third Party Custom ---
+
+# Use Theme (Third Party Prompt)
+let posh_theme = "~/.poshthemes/"
+# Change the theme names to: zash/space/robbyrussel/powerline/powerlevel10k_lean/
+# material/half-life/lambda Or double lines theme: amro/pure/spaceship, etc.
+# For more [Themes demo](https://ohmyposh.dev/docs/themes)
+$env.PROMPT_COMMAND = { || oh-my-posh prompt print primary --config $'($posh_theme)/tokyo_mine.omp.json' }
+# Optional
+$env.PROMPT_INDICATOR = $"(ansi y) (ansi reset)"
+
+$env.PROMPT_COMMAND_RIGHT = {||}
 
 # [[Yazi]]
 # Use `yaya` instead of yazi to start, and press q to quit, you'll see the CWD changed.  
