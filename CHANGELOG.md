@@ -6,6 +6,10 @@
 
 - Add Yazi `yaya` function config.
 
+### Removed
+
+- Remove useless Oh My Posh config when updating v26 to v27.
+
 ## [0.1.0] - 2025-06-05
 
 ### Added (0.1.0)
