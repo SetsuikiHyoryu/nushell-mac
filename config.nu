@@ -161,3 +161,6 @@ def --env yaya [...args] {
     }
     rm -fp $tmp
 }
+
+# [[Rust]]
+source $"($nu.home-path)/.cargo/env.nu"

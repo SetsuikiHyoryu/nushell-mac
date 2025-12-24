@@ -5,6 +5,7 @@
 ### Added
 
 - Add Yazi `yaya` function config.
+- Add Rust environment.
 
 ### Removed
 
