@@ -6,7 +6,8 @@
 
 - Add Yazi `yaya` function config.
 - Add Rust environment.
-- Add PIP environment.
+- Add PIP into PATH.
+- Add Aider into PATH.
 
 ### Removed
 
