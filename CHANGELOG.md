@@ -6,6 +6,7 @@
 
 - Add Yazi `yaya` function config.
 - Add Rust environment.
+- Add PIP environment.
 
 ### Removed
 

@@ -14,4 +14,7 @@ path add ($env.FNM_MULTISHELL_PATH | path join "bin")
 # Rust
 source $"($nu.home-path)/.cargo/env.nu"
 
+# PIP
+path add (python3 -m site --user-base | str trim | path join "bin")
+
 $env.PATH = ($env.PATH | uniq )
