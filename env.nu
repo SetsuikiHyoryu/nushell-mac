@@ -22,4 +22,8 @@ path add (python3 -m site --user-base | str trim | path join "bin")
 # - Aider
 path add $"($nu.home-path)/.local/bin"
 
+# Java
+$env.JAVA_HOME = '/opt/homebrew/opt/openjdk@17'
+path add $"($env.JAVA_HOME)/bin"
+
 $env.PATH = ($env.PATH | uniq )
