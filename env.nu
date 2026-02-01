@@ -24,9 +24,10 @@ path add $"($nu.home-path)/.local/bin"
 
 # Java
 $env.JAVA_HOME_17 = '/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home'
+$env.JAVA_HOME_21 = '/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home'
 $env.JAVA_HOME_24 = '/Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home'
-$env.JAVA_HOME_FOR_JDTLS = $env.JAVA_HOME_24
-$env.JAVA_HOME = '/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home'
+$env.JAVA_HOME_FOR_JDTLS = $env.JAVA_HOME_21
+$env.JAVA_HOME = $env.JAVA_HOME_21
 path add $"($env.JAVA_HOME)/bin"
 
 $env.PATH = ($env.PATH | uniq )
