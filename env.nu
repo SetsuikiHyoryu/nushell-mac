@@ -30,4 +30,10 @@ $env.JAVA_HOME_FOR_JDTLS = $env.JAVA_HOME_21
 $env.JAVA_HOME = $env.JAVA_HOME_21
 path add $"($env.JAVA_HOME)/bin"
 
+# /usr/local/bin/
+#
+# GUI 安装的程序通常在这儿。  
+# 因为其他位置存在同名的程序，我需要这里的优先级最低，因此放在 PATH 的最后。
+path add "/usr/local/bin/"
+
 $env.PATH = ($env.PATH | uniq )
