@@ -37,3 +37,6 @@ path add $"($env.JAVA_HOME)/bin"
 path add "/usr/local/bin/"
 
 $env.PATH = ($env.PATH | uniq )
+
+# Others not PATH
+$env.EDITOR = 'nvim'
