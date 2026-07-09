@@ -11,6 +11,11 @@ path add "/opt/homebrew/bin"
 fnm env --json | from json | load-env
 path add ($env.FNM_MULTISHELL_PATH | path join "bin")
 
+# pnpm
+# Use pnpm v11+ and use `pnpm setup` to create this file.
+# See: <https://pnpm.io/zh/cli/setup>
+source $"($nu.home-dir)/.config/nushell/env.nu"
+
 # Rust
 source $"($nu.home-dir)/.cargo/env.nu"
 
